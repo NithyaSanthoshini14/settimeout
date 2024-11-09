@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=stop()>stop</button>
+    <p id="timer"></p>
+    <script>
+        
+        count=0
+        let stoptimer=setInterval(() => {
+            count++
+            console.log(count)
+            let p1=document.getElementById("timer")
+            p1.innerText=count
+        });
+        function stop(){
+            let btn=document.getElementsByTagName("button")[0]
+           clearInterval(stoptimer)
+            
+
+            
+        }
+
+        
+    </script>
+</body>
+</html>
